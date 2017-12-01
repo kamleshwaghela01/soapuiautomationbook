@@ -20,7 +20,7 @@
 <li>Spring bean validation, JSR 303</li>
 </ul>
 
-    <a href="<c:url value="/cxf/services/"/>">WSDL / WADL location</a>
+<a href="<c:url value="/cxf/services/"/>">WSDL / WADL location</a>
 
 
 
@@ -44,7 +44,7 @@ All locations : <a href="<c:url value="/cxf/rest/location/*"/>">/rest/location/*
 
 Location ID is : ${locationData.id}
 <br />
-Code is : ${locationData.code}
+Timezone is : ${locationData.timezone}
 <br />
 Time is : ${locationData.date}
 <br />
@@ -126,11 +126,11 @@ Location is : ${locationData.location}
 <form:errors path="location" cssClass="error"/>
 </label>
 
-<label for="code">Code
-<input id="code" name="code"/>
+<label for="timezone">Timezone
+<input id="timezone" name="timezone"/>
 </label>
 
-<label for="date">Date (Format : yyyy-mm-dd) 
+<label for="date">Date (Format : yyyy-mm-dd)
 <input id="date" name="date"/>
 </label>
 
@@ -157,11 +157,11 @@ Location is : ${locationData.location}
 <input id="locationUpdate" name="location"/>
 </label>
 
-<label for="codeUpdate">Code
-<input id="codeUpdate" name="code"/>
+<label for="timezoneUpdate">Timezone
+<input id="timezoneUpdate" name="timezone"/>
 </label>
 
-<label for="dateUpdate">Date (Format : yyyy-mm-dd) 
+<label for="dateUpdate">Date (Format : yyyy-mm-dd)
 <input id="dateUpdate" name="date"/>
 </label>
 

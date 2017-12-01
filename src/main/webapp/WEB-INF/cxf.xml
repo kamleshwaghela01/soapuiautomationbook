@@ -76,19 +76,7 @@
         <cxf:features>
             <cxf:logging/>
         </cxf:features>
-    </cxf:bus> 
-     
-	<!-- CLIENT -->
-	<!--
-  	<jaxrs:client id="locationClient"
-         address="http://localhost:8080/rest/"
-         serviceClass="org.exampledriven.cxfexample.webservice.LocationService"
-         inheritHeaders="true">
-         <jaxrs:headers>
-             <entry key="Accept" value="application/xml"/>
-         </jaxrs:headers>
-  	</jaxrs:client> 
-     --> 
+    </cxf:bus>
 
 	<!-- Spring Validation -->
 	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>

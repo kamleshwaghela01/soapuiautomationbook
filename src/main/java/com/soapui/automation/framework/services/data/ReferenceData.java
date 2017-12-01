@@ -16,17 +16,17 @@ public class ReferenceData {
 	@DateTimeFormat(pattern="yyyy-mm-dd")
 	private Date date;
 	@NotNull
-	private String code;
+	private String timezone;
 	@NotNull
 	@Size(max = 20, min = 5)
 	private String location;
 
-	public void setCode(String code) {
-		this.code = code;
+	public void setTimezone(String timezone) {
+		this.timezone = timezone;
 	}
 
-	public String getCode() {
-		return code;
+	public String getTimezone() {
+		return timezone;
 	}
 
 	public void setLocation(String location) {
@@ -57,7 +57,7 @@ public class ReferenceData {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		Formatter formatter = new Formatter(sb, Locale.US);
-		formatter.format("ID:%s\nLocation:%s\nDate:%s\nCode:%s\n", getId(), getLocation(), getDate(), getCode());
+		formatter.format("ID:%s\nLocation:%s\nDate:%s\nTime zone:%s\n", getId(), getLocation(), getDate(), getTimezone());
 
 		return sb.toString();
 	}
